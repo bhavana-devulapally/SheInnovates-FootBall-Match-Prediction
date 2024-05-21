@@ -1,7 +1,7 @@
 # SheInnovates-FootBall-Match-Prediction
 This project uses a Random Forest algorithm to predict football match outcomes based on historical data. It includes data preprocessing, feature engineering, model training, and evaluation. Part of the "She Innovates" initiative to promote women's involvement in tech and sports analytics.
 
-# She Innovates EPL Match Predictor
+### She Innovates EPL Match Predictor
 
 This project was developed for the She Innovates hackathon and uses a Random Forest machine learning model to predict the outcomes of English Premier League (EPL) matches based on historical data.
 
