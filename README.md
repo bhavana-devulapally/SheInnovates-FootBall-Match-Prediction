@@ -35,11 +35,10 @@ The project involves the following steps:
 
 ## Installation
 
-To get started with this project, clone the repository and install the necessary dependencies:
+To get started with this project, clone the repository by the commad given below:
 ```bash
 git clone https://github.com/yourusername/SheInnovates-FootBall-Match-Prediction.git
-cd SheInnovates-FootBall-Match-Prediction
-pip install -r requirements.txt
+
 ```
 
 ## Usage
