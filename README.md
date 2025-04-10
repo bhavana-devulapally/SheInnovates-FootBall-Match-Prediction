@@ -1,37 +1,50 @@
 # SheInnovates-FootBall-Match-Prediction
-This project uses a Random Forest algorithm to predict football match outcomes based on historical data. It includes data preprocessing, feature engineering, model training, and evaluation . THis project was develped as a part of the "She Innovates" 
+This project was developed for the SheInnovates Hackathon and uses a Random Forest machine learning model to predict the outcomes of English Premier League (EPL) matches based on historical data. The end-to-end pipeline includes data scraping, cleaning, feature engineering, model training, evaluation, and improvement. This project was develped as a part of the "She Innovates" Hackathon.
 
 ### She Innovates EPL Match Predictor
 
 This project was developed for the She Innovates hackathon and uses a Random Forest machine learning model to predict the outcomes of English Premier League (EPL) matches based on historical data.
 
 ## Project Overview
+The objective of this project was to predict match outcomes by building a machine learning model trained on multi-season EPL data. The project pipeline follows these major steps:
 
-The project involves the following steps:
+1. **Data Collection (Web Scraping)**:
+Before model building, I implemented a web scraping pipeline using Python, leveraging the requests library to make HTTP calls and BeautifulSoup to parse the HTML pages of EPL match data across seasons. I extracted relevant match details such as date, teams, venue, and results, and structured the raw HTML into a pandas DataFrame. This automated pipeline ensured access to up-to-date and comprehensive match history from various online sources.
 
-1. **Data Preparation**:
+2. **Data Preparation**:
     - The dataset used is `matches.csv`, containing over a thousand rows, each representing an EPL match.
     - Missing data was investigated and cleaned to ensure completeness for two seasons.
 
-2. **Data Cleaning**:
+3. **Data Cleaning**:
     - Conversion of non-numeric data to numeric formats.
     - Handling missing values and converting date columns to the correct datetime format.
 
-3. **Feature Engineering**:
+4. **Feature Engineering**:
     - Creation of new predictors such as `venue_code`, `opp_code`, `hour`, and `day_code`.
     - Conversion of categorical data to numerical codes.
 
-4. **Model Training**:
+5. **Model Training**:
     - The Random Forest classifier was chosen for its ability to handle non-linear relationships.
     - Data was split into training and test sets, ensuring chronological order to simulate real-world predictions.
 
-5. **Model Evaluation**:
+6. **Model Evaluation**:
     - Initial evaluation showed the model predicted losses more accurately than wins.
     - Visualization of actual vs. predicted values was performed.
 
-6. **Improving Model Precision**:
+7. **Improving Model Precision**:
     - Rolling averages of team performance over the last three matches were computed and added as predictors.
     - The model was retrained using these new predictors, resulting in improved precision.
+
+8. **Performance Enhancement** : 
+   - Introduced rolling performance metrics as additional features.
+   - Retrained the model with enhanced feature set, leading to improved precision and generalization.
+
+
+## Key Technologies Used
+ - Languages/Libraries: Python, pandas, NumPy, scikit-learn, BeautifulSoup, requests
+ - ML Techniques: Random Forest, feature engineering, rolling averages, model evaluation
+ - Data Engineering: Web scraping, data wrangling, categorical encoding
+
 
 ## Installation
 
